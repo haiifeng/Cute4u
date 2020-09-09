@@ -16,6 +16,14 @@ function themeConfig($form) {
     $form->addInput($sidebarBlock->multiMode());
 }
 
+function themeInit($archive) {
+    if($archive->is('category', 'flslug')){ 
+        $archive->parameter->pageSize = 2;
+    }else{
+        $archive->parameter->pageSize = 10;//默认显示条数
+    }
+}
+
 
 /*
 function themeFields($layout) {
