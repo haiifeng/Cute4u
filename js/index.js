@@ -57,6 +57,7 @@ var Cute4u = function () {
                 }
             ]
         });
+        app.lrc.hide();
         return app;
     };
 

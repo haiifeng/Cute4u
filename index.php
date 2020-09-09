@@ -21,7 +21,7 @@ function StringToText($string,$num){
 		//删除所有图片
 		$content=preg_replace("/<[img|IMG].*?src=[\'\"](.*?(?:[\.gif|\.jpg|\.jpeg|\.png|\.tiff|\.bmp]))[\'|\"].*?[\/]?>/","",$html_string);
 		//将空格替换成空
-		$content = str_replace(" ", "", $content);
+		// $content = str_replace(" ", "", $content);
 		//函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
 		$contents = strip_tags($content);
 		//返回字符串中的前$num字符串长度的字符
@@ -32,7 +32,10 @@ function StringToText($string,$num){
 }
 ?>
 
-<div class="col-mb-12 col-8" id="main" role="main">
+
+<?php $this->need('sidebar.php'); ?>
+
+<div class="col-mb-12 col-offset-1 col-8" id="main" role="main">
 	<?php while($this->next()): ?>
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
@@ -63,5 +66,5 @@ function StringToText($string,$num){
     <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 </div><!-- end #main-->
 
-<?php $this->need('sidebar.php'); ?>
 <?php $this->need('footer.php'); ?>
+<?php $this->need('test.php'); ?>

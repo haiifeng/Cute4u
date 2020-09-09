@@ -12,9 +12,12 @@ html.bg {
 
 body {
     /* background-color: #FFF; */
-    color: #FFF;
     font-family: Fira Mono, "Noto Serif SC", -apple-system, Roboto, Helvetica Neue, sans-serif, "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
     font-size: 100%;
+}
+
+#body {
+    color: #FFF;
 }
 
 a {
@@ -24,7 +27,7 @@ a {
 
 a:hover,
 a:active {
-    color: #3354AA;
+    color: #f9e602;
 }
 
 pre,
@@ -135,7 +138,7 @@ textarea {
 
 #logo {
     /* color: #333; */
-    color:#fff;
+    color: #fff;
     font-size: 2.5em;
 }
 
@@ -162,12 +165,14 @@ textarea {
     border-bottom: none;
     height: 32px;
     line-height: 32px;
-    color: #444;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
     float: left;
 }
 
 #nav-menu a:hover,
 #nav-menu .current {
+    color: #444;
     background: #F6F6F6;
 }
 
@@ -207,10 +212,11 @@ textarea {
 .post {
     padding: 10px 20px;
     margin: 20px auto;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
 }
+
 .post:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .post-title {
@@ -331,7 +337,7 @@ textarea {
 }
 
 .comment-list li.comment-by-author {
-    background: #FFF9E8;
+    background: rgba(255, 249, 232, 0.15);
 }
 
 .comment-list li .comment-reply {
@@ -385,8 +391,8 @@ textarea {
 #secondary {
     padding-top: 15px;
     word-wrap: break-word;
-    background: rgba(255,255,255,0.2);
-    margin:20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
 }
 
 .widget {
@@ -420,7 +426,7 @@ textarea {
 }
 
 #footer a:hover {
-    color: #3354AA;
+    color: #f9e602;
 }
 
 .error-page {
@@ -535,17 +541,19 @@ img.alignright {
     visibility: hidden;
 }
 
-#toTop{
+#toTop {
     position: fixed;
     bottom: 50px;
     right: 30px;
     font-size: 26px;
     cursor: pointer;
 }
-#toTop:hover span{
+
+#toTop:hover span {
     transform: rotate(-43deg);
 }
-#toTop.toTopAni{
+
+#toTop.toTopAni {
     border-radius: 55% 45% 73% 27%/70% 58% 42% 30%;
     -webkit-animation: toTopAni 4s infinite;
     animation: toTopAni 4s infinite;
@@ -561,40 +569,49 @@ img.alignright {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: linear-gradient(120deg,#2196f3,#8fd3f4);
+    background-image: linear-gradient(120deg, #2196f3, #8fd3f4);
 }
 
 @-webkit-keyframes toTopAni {
     0% {
-        border-radius:26% 74% 49% 51%/21% 51% 49% 79%
+        border-radius: 26% 74% 49% 51%/21% 51% 49% 79%
     }
+
     25% {
-        border-radius:74% 26% 50% 50%/53% 29% 71% 47%
+        border-radius: 74% 26% 50% 50%/53% 29% 71% 47%
     }
+
     50% {
-        border-radius:48% 52% 28% 72%/45% 71% 29% 55%
+        border-radius: 48% 52% 28% 72%/45% 71% 29% 55%
     }
+
     75% {
-        border-radius:48% 52% 76% 24%/70% 49% 51% 30%
+        border-radius: 48% 52% 76% 24%/70% 49% 51% 30%
     }
+
     to {
-        border-radius:26% 74% 49% 51%/21% 51% 49% 79%
+        border-radius: 26% 74% 49% 51%/21% 51% 49% 79%
     }
 }
+
 @keyframes toTopAni {
     0% {
-        border-radius:26% 74% 49% 51%/21% 51% 49% 79%
+        border-radius: 26% 74% 49% 51%/21% 51% 49% 79%
     }
+
     25% {
-        border-radius:74% 26% 50% 50%/53% 29% 71% 47%
+        border-radius: 74% 26% 50% 50%/53% 29% 71% 47%
     }
+
     50% {
-        border-radius:48% 52% 28% 72%/45% 71% 29% 55%
+        border-radius: 48% 52% 28% 72%/45% 71% 29% 55%
     }
+
     75% {
-        border-radius:48% 52% 76% 24%/70% 49% 51% 30%
+        border-radius: 48% 52% 76% 24%/70% 49% 51% 30%
     }
+
     to {
-        border-radius:26% 74% 49% 51%/21% 51% 49% 79%
+        border-radius: 26% 74% 49% 51%/21% 51% 49% 79%
     }
 }
