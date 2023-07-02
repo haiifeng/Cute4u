@@ -15,8 +15,11 @@ html.bg {
 
 body {
     /* background-color: #FFF; */
-    font-family: Fira Mono, "Noto Serif SC", -apple-system, Roboto, Helvetica Neue, sans-serif, "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
+    font-family: 'Fira Code', monospace, "Noto Serif SC", -apple-system, Roboto, Helvetica Neue, sans-serif, "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
     font-size: 100%;
+}
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Fira Code VF', monospace; }
 }
 
 #body {
