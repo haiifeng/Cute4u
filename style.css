@@ -1,3 +1,6 @@
+/* CSS */
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 html.bg {
     background: url(https://www.m78.co/demo/bg.png) center center no-repeat no-repeat fixed #6A6B6F;
     background-size: cover;
